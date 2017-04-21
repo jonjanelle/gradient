@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+#coords {
+  color: white;
+}
