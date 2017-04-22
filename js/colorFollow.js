@@ -11,7 +11,7 @@ function updateColor(event)
     divs = document.getElementsByClassName('color-square');
   }
 
-  if (boxCoords.length==0){ getBoxCoords(70); }
+  if (boxCoords.length==0){ getBoxCoords(80); }
 
   for (var i = 0; i < divs.length; i++){
       var offsets = boxCoords[i];
@@ -36,7 +36,9 @@ function createDivs(size) {
       div.style.width = size+"px";
       div.style.height = size+"px";
       div.style.float="left";
-      div.style.borderRadius="100%";
+      div.style.zIndex="2";
+      div.style.borderRadius="20%";
+      div.style.margin="0 auto";
       div.className='color-square';
       document.getElementById('container').appendChild(div);
     }
